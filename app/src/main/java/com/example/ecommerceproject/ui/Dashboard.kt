@@ -76,6 +76,7 @@ class Dashboard : AppCompatActivity() {
                     println("The value of latitude and longitude are: $i")
                 }
             }
+            //test
         }
 
         /* Navigation to the profile screen. */
