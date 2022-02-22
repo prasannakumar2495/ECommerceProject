@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewPopUp"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    >
+
+
+    <EditText
+        android:id="@+id/popUpHouseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_house_number"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck"
+        />
+
+    <EditText
+        android:id="@+id/popUpStreetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpHouseNumber"
+        android:hint="@string/enter_street_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck"
+        />
+
+    <EditText
+        android:id="@+id/popUpCity_Village"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpStreetName"
+        android:hint="@string/enter_city_village_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck"
+        />
+
+    <Button
+        android:id="@+id/popUpSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpCity_Village"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:text="@string/save"
+        />
+
+    <Button
+        android:id="@+id/popUpCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpCity_Village"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="5dp"
+        android:text="@string/cancel"
+        />
+
+</RelativeLayout>
+

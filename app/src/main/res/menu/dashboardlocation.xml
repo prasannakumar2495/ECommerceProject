@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardLocation_NewAddress"
+        android:title="@string/new_address"
+        />
+    <item
+        android:id="@+id/dashboardLocation_UpdateAddress"
+        android:title="@string/update_address"
+        />
+</menu>

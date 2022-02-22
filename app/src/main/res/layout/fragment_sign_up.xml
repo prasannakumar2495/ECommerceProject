@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.SignUpFragment"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        >
+
+        <EditText
+            android:id="@+id/signup_emailID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/enter_emailID"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            tools:ignore="TextContrastCheck"
+            />
+
+        <EditText
+            android:id="@+id/signup_mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/signup_emailID"
+            android:hint="@string/mobile_number"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            tools:ignore="TextContrastCheck"
+            />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/signup_mobileNumber"
+            android:hint="@string/enter_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck"
+            />
+
+        <CheckBox
+            android:id="@+id/signup_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/signup_password"
+            android:text="@string/remember_me"
+            />
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_checkBox"
+            android:enabled="false"
+            android:text="@string/sign_up"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

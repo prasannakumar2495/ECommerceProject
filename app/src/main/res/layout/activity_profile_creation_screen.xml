@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.ProfileCreationScreen"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileScreenCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:padding="5dp"
+            android:text="@string/my_profile"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileScreenPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_person_outline"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundedfield"
+        android:hint="@string/enter_first_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundedfield"
+        android:hint="@string/enter_last_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundedfield"
+        android:hint="@string/enter_contact_number"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundedfield"
+        android:hint="@string/enter_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/business_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundedfield"
+        android:hint="@string/enter_business_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        />
+
+</LinearLayout>
